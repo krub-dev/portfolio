@@ -352,3 +352,91 @@
         font-size: 1.1rem;
     }
 }
+
+/* ===== IPHONE 12 AND SIMILAR (390px) ===== */
+/* Specific adjustments for iPhone 12 Pro and similar devices */
+@media (max-width: 390px) {
+    .container {
+        padding: 1.2rem 0.8rem;
+        width: calc(100% - 0.8rem);
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        top: -60px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        letter-spacing: 0.8px;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    .description {
+        font-size: 0.85rem;
+        line-height: 1.35;
+    }
+
+    .location {
+        font-size: 0.75rem;
+    }
+
+    .soon {
+        font-size: 0.8rem;
+        padding: 0.45rem 1rem;
+    }
+
+    .contact-info p {
+        font-size: 0.75rem;
+    }
+
+    .email {
+        font-size: 0.75rem;
+    }
+
+    /* Even smaller video for iPhone 12 */
+    #rickroll-video video {
+        width: 200px;
+        height: 115px;
+    }
+
+    /* Adjust icons for tighter spacing */
+    .theme-toggle {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+        top: 8px;
+        left: 8px;
+    }
+
+    .lang-toggle {
+        width: 32px;
+        height: 32px;
+        font-size: 0.6rem;
+        top: 55px;
+        left: 8px;
+    }
+
+    .construction-icons {
+        font-size: 1.1rem;
+        top: 12px;
+        right: 12px;
+    }
+
+    .lemon-icon {
+        font-size: 0.9rem;
+        bottom: 8px;
+        left: 8px;
+    }
+
+    /* Social buttons even smaller */
+    .social-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+}
