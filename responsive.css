@@ -1,0 +1,354 @@
+/* ================================================
+   RESPONSIVE STYLES FOR KRUB.DEV PORTFOLIO
+   ================================================ */
+
+/* ================================================
+   TABLET BREAKPOINT (768px and below)
+   - Logo moves to top and starts reducing size
+   - Content adjustments for better tablet experience
+   ================================================ */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        min-height: 100vh;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 600px;
+        width: 95%;
+        padding: 2.2rem 1.8rem;
+        margin: 0;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 120px;
+        right: auto;
+    }
+
+    .logo:hover {
+        transform: translateX(-50%) perspective(800px) rotateX(0deg) rotateY(0deg) scale(1.25) rotate(15deg) translateZ(15px);
+    }
+
+    /* Slightly reduce sizes */
+    h1 {
+        font-size: 2.4rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 0.4rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    .location {
+        font-size: 0.9rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .soon {
+        font-size: 1rem;
+        padding: 0.6rem 1.6rem;
+        margin: 0;
+    }
+
+    .contact-info {
+        margin-top: 1rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .email {
+        font-size: 0.9rem;
+    }
+
+    /* Slightly smaller video */
+    #rickroll-video video {
+        width: 320px;
+        height: 190px;
+    }
+
+    /* Slightly smaller icons */
+    .construction-icons {
+        font-size: 1.5rem;
+        top: 30px;
+        right: 25px;
+    }
+
+    .theme-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+        top: 18px;
+        left: 18px;
+    }
+
+    .lang-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        top: 78px;
+        left: 18px;
+    }
+
+    .lemon-icon {
+        font-size: 1.4rem;
+        bottom: 18px;
+        left: 18px;
+    }
+
+    /* Reposition social buttons to bottom center in tablet */
+    .social-buttons {
+        position: absolute;
+        bottom: -25px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        gap: 15px;
+        z-index: 15;
+    }
+
+    .social-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Small tablet - Further reduce content */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        width: 95%;
+        padding: 2rem 1.5rem;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        top: -80px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+
+    .location {
+        font-size: 0.85rem;
+    }
+
+    .soon {
+        font-size: 0.95rem;
+        padding: 0.55rem 1.4rem;
+    }
+
+    .contact-info p {
+        font-size: 0.85rem;
+    }
+
+    /* Smaller video */
+    #rickroll-video video {
+        width: 280px;
+        height: 170px;
+    }
+
+    .construction-icons {
+        font-size: 1.5rem;
+        top: 30px;
+        right: 25px;
+    }
+
+    .lemon-icon {
+        left: 18px;
+    }
+
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .lang-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        top: 73px;
+    }
+
+    /* Social buttons remain centered and adjust size */
+    .social-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+        min-height: 100vh;
+        overflow-x: hidden;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5rem;
+    }
+
+    .container {
+        padding: 1.5rem 1rem;
+        max-width: 100%;
+        width: calc(100% - 1rem);
+        margin: 0;
+        border-radius: 0.8rem;
+        position: relative;
+        min-height: auto;
+    }
+
+    .logo {
+        position: absolute;
+        top: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        height: 90px;
+        right: auto;
+    }
+
+    .logo:hover {
+        transform: translateX(-50%) perspective(800px) rotateX(0deg) rotateY(0deg) scale(1.25) rotate(15deg) translateZ(12px);
+    }
+
+    .text-content {
+        gap: 0.8rem;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        margin-bottom: 0.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 0.8rem;
+    }
+
+    .location {
+        font-size: 0.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .soon {
+        font-size: 0.85rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .contact-info {
+        margin-top: 0.8rem;
+    }
+
+    .contact-info p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+
+    .email {
+        font-size: 0.8rem;
+    }
+
+    /* Smaller video on mobile */
+    #rickroll-video {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #rickroll-video video {
+        width: 220px;
+        height: 125px;
+    }
+
+    .close-video {
+        width: 24px;
+        height: 24px;
+        font-size: 11px;
+        top: 6px;
+        right: 6px;
+    }
+
+    /* Smaller icons on mobile */
+    .construction-icons {
+        font-size: 1.2rem;
+        top: 15px;
+        right: 15px;
+    }
+
+    .theme-toggle {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        top: 10px;
+        left: 10px;
+    }
+
+    .lang-toggle {
+        width: 35px;
+        height: 35px;
+        font-size: 0.65rem;
+        font-weight: 600;
+        top: 60px;
+        left: 10px;
+    }
+
+    .lemon-icon {
+        font-size: 1rem;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    /* Social buttons in mobile - smaller and still centered */
+    .social-buttons {
+        gap: 12px;
+    }
+
+    .social-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+}
