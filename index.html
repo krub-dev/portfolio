@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>krub.dev - Coming Soon</title>
+    <title>krub.dev - Kiko, Software Developer from Spain</title>
+    <meta name="description"
+        content="krub.dev - Kiko, a software developer based in Barcelona (Spain). Portfolio: Web, C, 3D design & GitHub projects.">
+    <meta name="robots" content="noodp">
     <link rel="icon" type="image/webp" href="assets/img/krub-logo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,87 +17,96 @@
 </head>
 
 <body>
-    <div class="construction-icons">🚧⚙️</div>
+    <noscript>
+        <h1>krub.dev - Kiko, Software Developer from Spain</h1>
+        <p>Currently building my personal portfolio (Web, C, 3D design and GitHub projects). Contact: <a
+                href="mailto:krubioillan@gmail.com">krubioillan@gmail.com</a></p>
+    </noscript>
 
-    <!-- Theme toggle button -->
-    <button class="theme-toggle" aria-label="Toggle theme">
-        <span class="theme-icon">🌙</span>
-    </button>
+    <div id="container">
+        <div class="construction-icons">🚧⚙️</div>
 
-    <!-- Language toggle button -->
-    <button class="lang-toggle" aria-label="Toggle language">
-        <span class="lang-icon">ES</span>
-    </button>
+        <!-- Theme toggle button -->
+        <button class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+        </button>
 
-    <!-- 🍋 Emote trigger -->
-    <div class="lemon-icon">🍋</div>
+        <!-- Language toggle button -->
+        <button class="lang-toggle" aria-label="Toggle language">
+            <span class="lang-icon">ES</span>
+        </button>
 
-    <!-- Hidden container for Rick Roll -->
-    <div id="rickroll-video">
-        <video width="360" height="215" controls autoplay muted>
-            <source src="assets/video/rick-rolled.mp4" type="video/mp4">
-            <source src="assets/video/rick-rolled.webm" type="video/webm">
-            Your browser does not support the video element.
-        </video>
-        <button class="close-video">✕</button>
-    </div>
+        <!-- 🍋 Emote trigger -->
+        <div class="lemon-icon">🍋</div>
 
-    <!-- Audio for Murcia easter egg -->
-    <audio id="murcia-sound" preload="auto">
-        <source src="assets/sound/acho.wav" type="audio/wav">
-        Your browser does not support the audio element.
-    </audio>
+        <!-- Hidden container for Rick Roll -->
+        <div id="rickroll-video">
+            <video width="360" height="215" controls autoplay muted>
+                <source src="assets/video/rick-rolled.mp4" type="video/mp4">
+                <source src="assets/video/rick-rolled.webm" type="video/webm">
+                Your browser does not support the video element.
+            </video>
+            <button class="close-video">✕</button>
+        </div>
 
-    <div class="container">
-        <img class="logo" src="assets/img/krub-icon.png" alt="krub.dev logo">
+        <!-- Audio for Murcia easter egg -->
+        <audio id="murcia-sound" preload="auto">
+            <source src="assets/sound/acho.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
 
-        <div class="text-content">
-            <h1><span class="comment-slashes">//</span> <span data-lang="greeting"></span></h1>
-            <div class="name-container">
-                <h2>&lt;<span data-lang="developer-tag"></span> <span data-lang="name-attr"></span>=<span
-                        class="name-highlight">"<span class="typing-text">KIKO</span><span
-                            class="typing-cursor">|</span>"</span>/&gt;</h2>
-                <!-- Profile photo (appears on KIKO hover) -->
-                <div class="profile-photo">
-                    <img src="assets/img/krub-pfp.jpeg" alt="KIKO Profile Photo">
+        <div class="container">
+            <img class="logo" src="assets/img/krub-icon.png" alt="krub.dev logo">
+
+            <div class="text-content">
+                <h1><span class="comment-slashes">//</span> <span data-lang="greeting"></span></h1>
+                <div class="name-container">
+                    <h2>&lt;<span data-lang="developer-tag"></span> <span data-lang="name-attr"></span>=<span
+                            class="name-highlight">"<span class="typing-text">KIKO</span><span
+                                class="typing-cursor">|</span>"</span>/&gt;</h2>
+                    <!-- Profile photo (appears on KIKO hover) -->
+                    <div class="profile-photo">
+                        <img src="assets/img/krub-pfp.jpeg" alt="KIKO Profile Photo">
+                    </div>
+                </div>
+                <p class="description" data-lang="description"></p>
+                <p class="location"><span data-lang="location-from"></span> <span class="murcia-trigger">Murcia</span>,
+                    <span data-lang="location-based"></span> <span class="location-icon">📍</span>
+                </p>
+                <span class="soon" data-lang="coming-soon"></span>
+                <div class="contact-info">
+                    <p><span data-lang="contact-text"></span> <a class="email" href="mailto:krubioillan@gmail.com"><span
+                                data-lang="contact-me"></span></a>.</p>
                 </div>
             </div>
-            <p class="description" data-lang="description"></p>
-            <p class="location"><span data-lang="location-from"></span> <span class="murcia-trigger">Murcia</span>,
-                <span data-lang="location-based"></span> <span class="location-icon">📍</span>
-            </p>
-            <span class="soon" data-lang="coming-soon"></span>
-            <div class="contact-info">
-                <p><span data-lang="contact-text"></span> <a class="email" href="mailto:krubioillan@gmail.com"><span
-                            data-lang="contact-me"></span></a>.</p>
+
+            <!-- Social media buttons -->
+            <div class="social-buttons">
+                <a href="https://github.com/krub-dev" class="social-btn" aria-label="GitHub" target="_blank"
+                    rel="noopener">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.300 24 12c0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/krub" class="social-btn" aria-label="LinkedIn" target="_blank"
+                    rel="noopener">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                </a>
+                <a href="https://x.com/krub_dev" class="social-btn" aria-label="X (Twitter)" target="_blank"
+                    rel="noopener">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+                    </svg>
+                </a>
             </div>
         </div>
-
-        <!-- Social media buttons -->
-        <div class="social-buttons">
-            <a href="https://github.com/krub-dev" class="social-btn" aria-label="GitHub" target="_blank" rel="noopener">
-                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.300 24 12c0-6.627-5.373-12-12-12z" />
-                </svg>
-            </a>
-            <a href="https://linkedin.com/in/krub" class="social-btn" aria-label="LinkedIn" target="_blank"
-                rel="noopener">
-                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                </svg>
-            </a>
-            <a href="https://x.com/krub_dev" class="social-btn" aria-label="X (Twitter)" target="_blank" rel="noopener">
-                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
-                </svg>
-            </a>
-        </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
