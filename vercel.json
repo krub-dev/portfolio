@@ -1,9 +1,15 @@
 {
-	"redirects": [
-		{
-			"source": "/",
-			"destination": "https://www.krub.dev/",
-			"permanent": true
-		}
-	]
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://www.krub.dev/",
+      "has": [
+        {
+          "type": "host",
+          "value": "krub.dev"
+        }
+      ],
+      "permanent": true
+    }
+  ]
 }
