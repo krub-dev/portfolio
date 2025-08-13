@@ -1,11 +1,32 @@
 /* ================================================
-   RESPONSIVE STYLES FOR KRUB.DEV PORTFOLIO
+    DESKTOP BREAKPOINT (769px and above)
+    - Desktop-specific adjustments
+    - Profile photo mobile class hidden
+    - Desktop-only layout refinements
+   ================================================ */
+@media (min-width: 769px) {
+    .profile-photo.mobile-visible {
+        opacity: 0;
+        /* Ensure mobile class doesn't interfere */
+    }
+
+    .profile-photo.clicked-visible {
+        opacity: 1 !important;
+        transform: translateY(-50%) translateX(0) scale(1) !important;
+    }
+}
+
+/* ================================================
+    RESPONSIVE STYLES FOR KRUB.DEV PORTFOLIO
    ================================================ */
 
 /* ================================================
-   TABLET BREAKPOINT (768px and below)
-   - Logo moves to top and starts reducing size
-   - Content adjustments for better tablet experience
+    TABLET BREAKPOINT (768px and below)
+    - Logo moves to top and starts reducing size
+    - Content adjustments for better tablet experience
+    - Social buttons repositioned to bottom center
+    - Profile photo becomes fixed and visible on mobile
+    - Slightly reduce font and icon sizes
    ================================================ */
 @media (max-width: 768px) {
     body {
@@ -39,45 +60,23 @@
     }
 
     /* Slightly reduce sizes */
-    h1 {
-        font-size: 2.4rem;
-        letter-spacing: 1.5px;
-        margin-bottom: 0.4rem;
-    }
+    /* h1 styles moved to more specific breakpoints */
 
-    h2 {
-        font-size: 1.2rem;
-        margin-bottom: 0.4rem;
-    }
+    /* h2 styles moved to more specific breakpoints */
 
-    .description {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-bottom: 1rem;
-    }
+    /* .description styles moved to more specific breakpoints */
 
-    .location {
-        font-size: 0.9rem;
-        margin-bottom: 1.4rem;
-    }
+    /* .location styles moved to more specific breakpoints */
 
-    .soon {
-        font-size: 1rem;
-        padding: 0.6rem 1.6rem;
-        margin: 0;
-    }
+    /* .soon styles moved to more specific breakpoints */
 
     .contact-info {
         margin-top: 1rem;
     }
 
-    .contact-info p {
-        font-size: 0.9rem;
-    }
+    /* .contact-info p styles moved to more specific breakpoints */
 
-    .email {
-        font-size: 0.9rem;
-    }
+    /* .email styles moved to more specific breakpoints */
 
     /* Slightly smaller video */
     #rickroll-video video {
@@ -132,9 +131,58 @@
         height: 50px;
         font-size: 1.2rem;
     }
+
+    /* Profile photo responsive styles */
+    .profile-photo {
+        position: fixed;
+        top: 30px;
+        right: 25px;
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+        transform: scale(0.8) translateY(-10px);
+        transition: all 0.3s ease;
+        pointer-events: none;
+        z-index: 150;
+    }
+
+    .profile-photo.mobile-visible {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        pointer-events: auto;
+    }
+
+    .profile-photo img {
+        border: 1.5px solid var(--accent-color);
+        box-shadow:
+            0 8px 20px rgba(0, 0, 0, 0.3),
+            0 4px 10px rgba(0, 0, 0, 0.2),
+            0 0 15px rgba(255, 200, 0, 0.2),
+            inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .name-container:hover .profile-photo {
+        opacity: 0;
+        transform: translateY(-50%) translateX(20px) scale(0.8);
+    }
+
+    .name-highlight {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .construction-icons {
+        z-index: 100;
+    }
 }
 
-/* Small tablet - Further reduce content */
+/* ================================================
+    SMALL TABLET BREAKPOINT (600px and below)
+    - Logo and container shrink further
+    - Font sizes and paddings reduced
+    - Video and icons scale down
+    - Social buttons remain centered and adjust size
+   ================================================ */
 @media (max-width: 600px) {
     .container {
         max-width: 100%;
@@ -151,27 +199,6 @@
     h1 {
         font-size: 2rem;
         letter-spacing: 1px;
-    }
-
-    h2 {
-        font-size: 1.1rem;
-    }
-
-    .description {
-        font-size: 0.95rem;
-    }
-
-    .location {
-        font-size: 0.85rem;
-    }
-
-    .soon {
-        font-size: 0.95rem;
-        padding: 0.55rem 1.4rem;
-    }
-
-    .contact-info p {
-        font-size: 0.85rem;
     }
 
     /* Smaller video */
@@ -212,6 +239,14 @@
     }
 }
 
+/* ================================================
+    MOBILE BREAKPOINT (480px and below)
+    - Layout stacks vertically, more compact
+    - Logo and profile photo shrink
+    - Video and icons scale for mobile
+    - Social buttons remain centered and small
+    - Text aligns left for better readability
+   ================================================ */
 @media (max-width: 480px) {
     body {
         padding: 0.5rem 0.5rem 1rem 0.5rem;
@@ -351,11 +386,32 @@
         height: 45px;
         font-size: 1.1rem;
     }
+
+    h1 {
+        text-align: left;
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    .profile-photo {
+        top: 15px;
+        right: 15px;
+        width: 90px;
+        height: 90px;
+    }
 }
 
-/* ===== IPHONE 12 AND SIMILAR (390px) ===== */
-/* Specific adjustments for iPhone 12 Pro and similar devices */
-@media (max-width: 390px) {
+/* ================================================
+    EXTRA SMALL MOBILE BREAKPOINT (400px and below)
+    - For iPhone 12 (mine) and similar devices
+    - All elements shrink to fit tiny screens
+    - Video, icons, and buttons at minimum size
+    - Tight spacing for controls and profile photo
+   ================================================ */
+@media (max-width: 400px) {
     .container {
         padding: 1.2rem 0.8rem;
         width: calc(100% - 0.8rem);
@@ -365,15 +421,6 @@
         width: 80px;
         height: 80px;
         top: -60px;
-    }
-
-    h1 {
-        font-size: 1.4rem;
-        letter-spacing: 0.8px;
-    }
-
-    h2 {
-        font-size: 0.9rem;
     }
 
     .description {
@@ -394,11 +441,7 @@
         font-size: 0.75rem;
     }
 
-    .email {
-        font-size: 0.75rem;
-    }
-
-    /* Even smaller video for iPhone 12 */
+    /* Even smaller video */
     #rickroll-video video {
         width: 200px;
         height: 115px;
@@ -438,5 +481,17 @@
         width: 42px;
         height: 42px;
         font-size: 1rem;
+    }
+
+    .profile-photo {
+        top: 10px;
+        right: 10px;
+        width: 70px;
+        height: 70px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        /* Even smaller for tiny screens */
     }
 }

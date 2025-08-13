@@ -75,125 +75,7 @@
         0 8px 20px rgba(0, 0, 0, 0.12),
         0 4px 10px rgba(0, 0, 0, 0.08),
         inset 0 1px 0 rgba(255, 255, 255, 0.8),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
-}
-
-[data-theme="light"] .container:hover {
-    box-shadow:
-        0 35px 70px rgba(31, 35, 40, 0.12),
-        0 20px 40px rgba(31, 35, 40, 0.08),
-        0 10px 25px rgba(0, 0, 0, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.08);
-}
-
-[data-theme="light"] .theme-toggle {
-    border: 1px solid rgba(200, 205, 215, 0.5);
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.15),
-        0 4px 10px rgba(0, 0, 0, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
-}
-
-[data-theme="light"] .lang-toggle {
-    border: 1px solid rgba(200, 205, 215, 0.5);
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.15),
-        0 4px 10px rgba(0, 0, 0, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
-}
-
-[data-theme="light"] .theme-toggle:hover {
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.2),
-        0 8px 20px rgba(0, 0, 0, 0.15),
-        inset 0 2px 0 rgba(255, 255, 255, 0.9),
-        inset 0 -2px 0 rgba(0, 0, 0, 0.08);
-}
-
-[data-theme="light"] .lang-toggle:hover {
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.2),
-        0 8px 20px rgba(0, 0, 0, 0.15),
-        inset 0 2px 0 rgba(255, 255, 255, 0.9),
-        inset 0 -2px 0 rgba(0, 0, 0, 0.08);
-}
-
-[data-theme="light"] .lang-icon {
-    color: rgba(0, 0, 0, 0.8);
-    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
-    text-shadow:
-        0 0 1px rgba(0, 0, 0, 0.9),
-        0 1px 1px rgba(0, 0, 0, 0.4);
-}
-
-[data-theme="light"] .lang-toggle:hover .lang-icon {
-    color: var(--accent-color);
-    transform: scale(1.1);
-}
-
-[data-theme="light"] h1 {
-    text-shadow: var(--text-shadow-h1-light);
-}
-
-[data-theme="light"] .name-highlight {
-    text-shadow: var(--text-shadow-h1-light);
-}
-
-[data-theme="light"] .soon {
-    box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.1),
-        0 2px 6px rgba(0, 0, 0, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
-    text-shadow: var(--soon-text-shadow-light);
-    border: 1px solid rgba(200, 205, 215, 0.5);
-}
-
-[data-theme="light"] .logo {
-    border: 1px solid rgba(200, 205, 215, 0.3);
-    box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.1),
-        0 2px 6px rgba(0, 0, 0, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
-}
-
-[data-theme="light"] .logo:hover {
-    box-shadow:
-        0 6px 18px rgba(0, 0, 0, 0.12),
-        0 3px 9px rgba(0, 0, 0, 0.1),
-        inset 0 2px 0 rgba(255, 255, 255, 0.9),
-        inset 0 -2px 0 rgba(0, 0, 0, 0.08);
-}
-
-[data-theme="light"] .social-btn {
-    border: 1px solid rgba(200, 205, 215, 0.3);
-    box-shadow:
-        0 4px 10px rgba(0, 0, 0, 0.06),
-        0 2px 5px rgba(0, 0, 0, 0.04),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
-}
-
-[data-theme="light"] .social-btn:hover {
-    box-shadow:
-        0 6px 15px rgba(0, 0, 0, 0.1),
-        0 3px 8px rgba(0, 0, 0, 0.06),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.08);
-}
-
-[data-theme="light"] .social-icon {
-    color: rgba(0, 0, 0, 0.8);
-    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
-    text-shadow:
-        0 0 1px rgba(0, 0, 0, 0.9),
-        0 3px 1px rgba(0, 0, 0, 0.4);
-    stroke: rgba(0, 0, 0, 0.5);
-    stroke-width: 0.5px;
+        /* ...existing code... */
 }
 
 [data-theme="light"] .social-btn:hover .social-icon {
@@ -423,40 +305,6 @@ body {
     max-width: 500px;
 }
 
-/* ===== KEYFRAME ANIMATIONS ===== */
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    25% {
-        background-position: 50% 75%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    75% {
-        background-position: 50% 25%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* ===== TYPOGRAPHY & TEXT STYLES ===== */
 h1 {
@@ -836,41 +684,7 @@ h2 {
     transform: scale(1.1);
 }
 
-@keyframes slideInFromLemon {
-    0% {
-        opacity: 0;
-        transform: scale(0.3) translateY(10px) translateX(10px);
-    }
-
-    50% {
-        opacity: 0.7;
-        transform: scale(0.8) translateY(5px) translateX(5px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1) translateY(0) translateX(0);
-    }
-}
-
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-10px);
-    }
-
-    60% {
-        transform: translateY(-5px);
-    }
-}
+/* ...existing code... */
 
 /* Special styling for the name highlight */
 .name-highlight {
@@ -883,17 +697,7 @@ h2 {
     transition: text-shadow 0.3s ease;
 }
 
-@keyframes nameGlow {
-    0% {
-        text-shadow: var(--name-shadow);
-        transform: scale(1);
-    }
-
-    100% {
-        text-shadow: var(--name-shadow-glow);
-        transform: scale(1.005);
-    }
-}
+/* ...existing code... */
 
 /* ===== LOADING STATE FOR TRANSLATION ELEMENTS ===== */
 [data-lang]:empty {
@@ -922,18 +726,7 @@ h2 {
     opacity: 0;
 }
 
-@keyframes blink {
-
-    0%,
-    50% {
-        opacity: 1;
-    }
-
-    51%,
-    100% {
-        opacity: 0;
-    }
-}
+/* ...existing code... */
 
 /* ===== PARTICLES BACKGROUND ===== */
 .particles {
@@ -980,25 +773,7 @@ h2 {
     opacity: 0.5;
 }
 
-@keyframes float {
-    0% {
-        transform: translateY(100vh) translateX(0px) rotate(0deg);
-        opacity: 0;
-    }
-
-    10% {
-        opacity: 0.4;
-    }
-
-    90% {
-        opacity: 0.4;
-    }
-
-    100% {
-        transform: translateY(-100px) translateX(100px) rotate(360deg);
-        opacity: 0;
-    }
-}
+/* ...existing code... */
 
 /* Light theme particle adjustments */
 [data-theme="light"] .particle {
@@ -1058,118 +833,4 @@ h2 {
         0 4px 10px rgba(0, 0, 0, 0.12),
         0 0 15px rgba(255, 200, 0, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-
-/* ===== RESPONSIVE PROFILE PHOTO ===== */
-/* Mobile styles for profile photo */
-@media (max-width: 768px) {
-    .profile-photo {
-        position: fixed;
-        top: 30px;
-        right: 25px;
-        width: 80px;
-        height: 80px;
-        opacity: 0;
-        transform: scale(0.8) translateY(-10px);
-        transition: all 0.3s ease;
-        pointer-events: none;
-        z-index: 150;
-        /* Above construction icons */
-    }
-
-    .profile-photo.mobile-visible {
-        opacity: 1;
-        transform: scale(1) translateY(0);
-        pointer-events: auto;
-    }
-
-    .profile-photo img {
-        border: 1.5px solid var(--accent-color);
-        box-shadow:
-            0 8px 20px rgba(0, 0, 0, 0.3),
-            0 4px 10px rgba(0, 0, 0, 0.2),
-            0 0 15px rgba(255, 200, 0, 0.2),
-            inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    }
-
-    /* Hide desktop hover behavior on mobile */
-    .name-container:hover .profile-photo {
-        opacity: 0;
-        transform: translateY(-50%) translateX(20px) scale(0.8);
-    }
-
-    /* Make KIKO clickable on mobile */
-    .name-highlight {
-        cursor: pointer;
-        user-select: none;
-    }
-
-    /* Reduce construction icons z-index so photo appears above */
-    .construction-icons {
-        z-index: 100;
-    }
-}
-
-/* Desktop: keep current hover behavior */
-@media (min-width: 769px) {
-    .profile-photo.mobile-visible {
-        opacity: 0;
-        /* Ensure mobile class doesn't interfere */
-    }
-}
-
-/* ===== SMALL MOBILE RESPONSIVE ===== */
-/* For very small screens, move text to avoid photo overlap */
-@media (max-width: 500px) {
-
-    /* Only move H1 and H2 to the left, keep rest centered */
-    h1 {
-        text-align: left;
-        font-size: 2.4rem;
-        /* Slightly smaller on very small screens */
-    }
-
-    h2 {
-        text-align: left;
-    }
-
-    /* Ensure photo stays in same position but with adequate spacing */
-    .profile-photo {
-        top: 15px;
-        right: 15px;
-        width: 90px;
-        height: 90px;
-    }
-}
-
-/* ===== EXTRA SMALL MOBILE ===== */
-/* For extra small screens, reduce photo size again to avoid collision */
-@media (max-width: 400px) {
-    .profile-photo {
-        top: 10px;
-        right: 10px;
-        width: 70px;
-        height: 70px;
-    }
-
-    h1 {
-        font-size: 2.2rem;
-        /* Even smaller for tiny screens */
-    }
-}
-
-/* ===== DESKTOP CLICK BEHAVIOR ===== */
-/* Desktop click state - same position as hover */
-.profile-photo.clicked-visible {
-    opacity: 1;
-    transform: translateY(-50%) translateX(0) scale(1);
-    pointer-events: auto;
-}
-
-/* Ensure click state works properly on desktop */
-@media (min-width: 769px) {
-    .profile-photo.clicked-visible {
-        opacity: 1 !important;
-        transform: translateY(-50%) translateX(0) scale(1) !important;
-    }
 }
