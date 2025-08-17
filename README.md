@@ -1,6 +1,6 @@
-# [krub.dev](https://krub.dev) — My Personal Portfolio
+# [krub.dev](https://krub.dev) — My Personal Portfolio 🍋
 
-Welcome! This is my personal portfolio, built and designed by me (Kiko, aka krub-dev), a software developer based in Barcelona, Spain.
+Welcome! This is my personal portfolio, built and designed by me ([Kiko](https://www.linkedin.com/in/krub/), krub-dev), a software developer based in Barcelona, Spain.
 
 ## About This Project
 
