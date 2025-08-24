@@ -26,20 +26,23 @@
     </noscript>
 
     <div id="container">
-        <div class="construction-icons">🚧⚙️</div>
+        <!-- Header with navigation and controls -->
+        <header class="site-header">
+            <div class="construction-icons">🚧⚙️</div>
 
-        <!-- Theme toggle button -->
-        <button class="theme-toggle" aria-label="Toggle theme">
-            <span class="theme-icon">🌙</span>
-        </button>
+            <!-- Theme toggle button -->
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
 
-        <!-- Language toggle button -->
-        <button class="lang-toggle" aria-label="Toggle language">
-            <span class="lang-icon">ES</span>
-        </button>
+            <!-- Language toggle button -->
+            <button class="lang-toggle" aria-label="Toggle language">
+                <span class="lang-icon">ES</span>
+            </button>
 
-        <!-- 🍋 Emote trigger -->
-        <div class="lemon-icon">🍋</div>
+            <!-- 🍋 Emote trigger -->
+            <div class="lemon-icon">🍋</div>
+        </header>
 
         <!-- Hidden container for Rick Roll -->
         <div id="rickroll-video">
@@ -57,10 +60,11 @@
             Your browser does not support the audio element.
         </audio>
 
-        <div class="container">
+        <!-- Main content area -->
+        <main class="container">
             <img class="logo" src="assets/img/krub-icon.png" alt="krub.dev logo">
 
-            <div class="text-content">
+            <section class="text-content">
                 <h1><span class="comment-slashes">//</span> <span data-lang="greeting"></span></h1>
                 <div class="name-container">
                     <h2>&lt;<span data-lang="developer-tag"></span> <span data-lang="name-attr"></span>=<span
@@ -76,14 +80,14 @@
                     <span data-lang="location-based"></span> <span class="location-icon">📍</span>
                 </p>
                 <span class="soon" data-lang="coming-soon"></span>
-                <div class="contact-info">
+                <section class="contact-info">
                     <p><span data-lang="contact-text"></span> <a class="email" href="mailto:krubioillan@gmail.com"><span
                                 data-lang="contact-me"></span></a>.</p>
-                </div>
-            </div>
+                </section>
+            </section>
 
             <!-- Social media buttons -->
-            <div class="social-buttons">
+            <nav class="social-buttons" aria-label="Social media links">
                 <a href="https://github.com/krub-dev" class="social-btn" aria-label="GitHub" target="_blank"
                     rel="noopener">
                     <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -105,8 +109,8 @@
                             d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
                     </svg>
                 </a>
-            </div>
-        </div>
+            </nav>
+        </main>
     </div>
     <script src="js/script.js" defer></script>
 </body>
