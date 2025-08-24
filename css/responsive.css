@@ -37,7 +37,8 @@
         align-items: center;
     }
 
-    .container {
+    .container,
+    main.container {
         max-width: 600px;
         width: 95%;
         padding: 2.2rem 1.8rem;
@@ -184,7 +185,8 @@
     - Social buttons remain centered and adjust size
    ================================================ */
 @media (max-width: 600px) {
-    .container {
+    .container,
+    main.container {
         max-width: 100%;
         width: 95%;
         padding: 2rem 1.5rem;
@@ -258,7 +260,8 @@
         padding-top: 5rem;
     }
 
-    .container {
+    .container,
+    main.container {
         padding: 1.5rem 1rem;
         max-width: 100%;
         width: calc(100% - 1rem);
@@ -412,7 +415,8 @@
     - Tight spacing for controls and profile photo
    ================================================ */
 @media (max-width: 400px) {
-    .container {
+    .container,
+    main.container {
         padding: 1.2rem 0.8rem;
         width: calc(100% - 0.8rem);
     }
